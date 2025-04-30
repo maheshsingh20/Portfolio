@@ -1,0 +1,8 @@
+#box{
+    border: 2px solid rgba(2, 120, 118, 0.3);
+    border-radius: 2px;
+}
+
+#sub-1{
+    padding: 15px;
+}

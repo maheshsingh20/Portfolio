@@ -1,0 +1,232 @@
+/* Projects.css - Dark Mode */
+.projects-container {
+    padding: 40px 20px;
+    background: #121212;
+    border: 2px solid #003437;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+  }
+  
+  .projects-subtitle {
+    color: #a0a0a0;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+  }
+  
+  .slide {
+    display: flex;
+    min-height: 400px;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .slide-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+  }
+  
+  .slide-content {
+    flex: 1;
+    padding: 30px;
+    background: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #333;
+  }
+  
+  .project-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+  
+  .status-in-progress {
+    background: #332500;
+    color: #ffb74d;
+  }
+  
+  .status-completed {
+    background: #003320;
+    color: #66bb6a;
+  }
+  
+  .project-name {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .project-description {
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .project-features {
+    margin-bottom: 25px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #d0d0d0;
+  }
+  
+  .feature-item:before {
+    content: "•";
+    color: #64b5f6;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .tech-badge {
+    background: #252525;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+    border: 1px solid #333;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .project-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .link-code {
+    background: #252525;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
+  .link-code:hover {
+    background: #333;
+    border-color: #555;
+  }
+  
+  .link-demo {
+    background: #0d47a1;
+    color: white;
+  }
+  
+  .link-demo:hover {
+    background: #1565c0;
+  }
+  
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  
+  .nav-button {
+    background: rgba(30,30,30,0.8);
+    border: 1px solid #444;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #e0e0e0;
+  }
+  
+  .nav-button:hover {
+    background: #333;
+    border-color: #555;
+  }
+  
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dot-active {
+    background: #64b5f6;
+    width: 30px;
+    border-radius: 6px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .slide {
+      flex-direction: column;
+      min-height: auto;
+    }
+    
+    .slide-image {
+      height: 200px;
+    }
+    
+    .slide-content {
+      border-left: none;
+      border-top: 1px solid #333;
+    }
+  }

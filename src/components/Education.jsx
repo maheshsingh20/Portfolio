@@ -1,6 +1,6 @@
 // src/components/Education.jsx
 import { motion } from 'framer-motion'
-
+import "./Edu.css";
 const Education = () => {
   const education = [
     {
@@ -43,7 +43,7 @@ const Education = () => {
         My academic journey has provided me with a strong foundation in computer science and problem-solving skills.
       </p>
       
-      <div className="space-y-8">
+      <div className="space-y-8" >
         {education.map((edu, index) => (
           <motion.div
             key={index}
@@ -52,9 +52,10 @@ const Education = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
             className="timeline-item"
+            
           >
             <div className="timeline-dot"></div>
-            <div className="card">
+            <div className="card" id='box'>
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
                 <h3 className="text-xl font-bold">{edu.degree}</h3>
                 <span className="text-gray-400">{edu.duration}</span>

@@ -1,5 +1,6 @@
 // src/components/Skills.jsx
 import { motion } from 'framer-motion'
+import "./Skills.css"
 
 const Skills = () => {
   const skillsData = [
@@ -41,7 +42,7 @@ const Skills = () => {
         I've acquired a diverse set of skills through academic learning, personal projects, and professional experiences. Here's a comprehensive overview of my technical and professional capabilities.
       </p>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" >
         {skillsData.map((skillCategory, index) => (
           <motion.div
             key={skillCategory.category}
@@ -50,6 +51,7 @@ const Skills = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             viewport={{ once: true }}
             className="card"
+            id='box'
           >
             <h3 className="text-xl font-semibold mb-4 text-gradient">{skillCategory.category}</h3>
             <div className="flex flex-wrap">
@@ -61,7 +63,7 @@ const Skills = () => {
         ))}
       </div>
       
-      <div className="mt-12">
+      <div className="mt-12" id='t-prof'>
         <h3 className="text-2xl font-semibold mb-6">Technical Proficiency</h3>
         
         <div className="space-y-6">

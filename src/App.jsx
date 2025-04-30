@@ -4,13 +4,16 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
-import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Prej from './components/Prej'
 import './index.css'
+
+
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -106,7 +109,7 @@ function App() {
           className="section"
         >
           <div className="container">
-            <Projects />
+            <Prej/>
           </div>
         </motion.section>
 
@@ -148,12 +151,6 @@ function App() {
           className="section section-alternate"
         >
           <div className="container">
-            <div className="section-header">
-              <h2 className="section-title">Achievements</h2>
-              <p className="section-subtitle">
-                Milestones and recognitions
-              </p>
-            </div>
             <Achievements />
           </div>
         </motion.section>
@@ -169,12 +166,6 @@ function App() {
           style={{ marginBottom: '8rem' }}
         >
           <div className="container">
-            <div className="section-header">
-              <h2 className="section-title">Get In Touch</h2>
-              <p className="section-subtitle">
-                I'd love to hear from you
-              </p>
-            </div>
             <Contact />
           </div>
         </motion.section>

@@ -1,5 +1,6 @@
 // src/components/Projects.jsx
 import { motion } from 'framer-motion'
+// import "./Projects.css"
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
 const Projects = () => {
@@ -59,7 +60,7 @@ const Projects = () => {
         Here are some of my notable projects that showcase my skills and experience. Each project represents a unique challenge and learning opportunity.
       </p>
       
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id='projects'>
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
@@ -74,7 +75,7 @@ const Projects = () => {
               <span className="text-4xl font-bold">{project.title.split(' ').map(w => w[0]).join('')}</span>
             </div>
             
-            <div className="p-6 relative z-20">
+            <div className="p-6 relative z-20" >
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-bold">{project.title}</h3>
                 <span className={`px-2 py-1 text-xs rounded-full ${
@@ -104,7 +105,7 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="flex space-x-4 mt-4">
+              <div className="flex space-x-4 mt-4" id='code-1'>
                 {project.links.github && (
                   <a 
                     href={project.links.github} 
@@ -112,7 +113,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center text-sm text-blue-400 hover:text-blue-300"
                   >
-                    <FiGithub className="mr-1" /> Code
+                    <FiGithub className="mr-1" id='code'/> Code
                   </a>
                 )}
                 {project.links.live && (
@@ -122,7 +123,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center text-sm text-purple-400 hover:text-purple-300"
                   >
-                    <FiExternalLink className="mr-1" /> Live Demo
+                    <FiExternalLink className="mr-1" id='live-demo'/> Live Demo
                   </a>
                 )}
               </div>
@@ -134,4 +135,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects 

@@ -1,6 +1,6 @@
 // src/components/Experience.jsx
 import { motion } from 'framer-motion'
-
+import "./Exp.css";
 const Experience = () => {
   const experiences = [
     {
@@ -42,9 +42,10 @@ const Experience = () => {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true }}
             className="timeline-item"
+            
           >
             <div className="timeline-dot"></div>
-            <div className="card">
+            <div className="card" id='box'>
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
                 <h3 className="text-xl font-bold">{exp.role}</h3>
                 <div className="flex items-center mt-2 md:mt-0">

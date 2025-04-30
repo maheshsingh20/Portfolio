@@ -1,0 +1,13 @@
+.box{
+    gap: 15px;
+}
+#t-prof{
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(48, 48, 53, 0.331);
+    border: 2px solid rgb(2, 86, 109);
+}
+#sub{
+    border: 2px solid rgb(2, 86, 109);
+}

@@ -1,6 +1,7 @@
 // src/components/Contact.jsx
 import { motion } from 'framer-motion'
 import { FiMail, FiPhone, FiLinkedin, FiGithub, FiMapPin } from 'react-icons/fi'
+import "./Contact.css"
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
         I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel free to reach out to me through any of the channels below.
       </p>
       
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8" id='card'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -21,8 +22,8 @@ const Contact = () => {
           <div className="card">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
-            <div className="space-y-4">
-              <div className="flex items-start">
+            <div className="space-y-4" >
+              <div className="flex items-start" >
                 <FiMail className="text-blue-400 mt-1 mr-4" />
                 <div>
                   <h4 className="text-gray-400 text-sm">Email</h4>

@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi'
-
+import "./Footer.css"
 const Footer = () => {
   return (
     <footer className="bg-gray-800/50 py-8 mt-12">
@@ -11,7 +11,7 @@ const Footer = () => {
             <p className="text-gray-400">Full Stack Developer & DevOps Enthusiast</p>
           </div>
           
-          <div className="flex space-x-6">
+          <div className="flex space-x-6" id='foot-icon'>
             <a 
               href="https://github.com/maheshsingh20" 
               target="_blank" 

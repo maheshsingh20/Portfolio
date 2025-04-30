@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { FiDownload } from 'react-icons/fi'
 import { FaReact, FaNodeJs, FaAws } from 'react-icons/fa'
 import { SiMongodb, SiTailwindcss, SiKubernetes, SiDocker } from 'react-icons/si'
+import "./About.css"
 
 const About = () => {
   const technologies = [
@@ -16,7 +17,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 px-4 bg-gray-900">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto" id='box'>
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,0 +1,155 @@
+/* ProjectDetails.css */
+.project-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #e0e0e0;
+  }
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    color: #64b5f6;
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .project-header h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .project-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #252525;
+    border-radius: 4px;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .project-links a:hover {
+    background: #333;
+  }
+  
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #333;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project-section {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+  }
+  
+  .project-section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #64b5f6;
+  }
+  
+  .project-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .project-section ul {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .project-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .technologies-list span {
+    background: #252525;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #333;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  
+  .status.in-progress {
+    background: #332500;
+    color: #ffb74d;
+  }
+  
+  .status.completed {
+    background: #003320;
+    color: #66bb6a;
+  }
+  
+  @media (max-width: 768px) {
+    .project-header {
+      align-items: center;
+      text-align: center;
+    }
+    
+    .project-links {
+      align-self: center;
+    }
+  }
