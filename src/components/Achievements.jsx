@@ -3,8 +3,6 @@ import { motion } from 'framer-motion'
 import { FaTrophy, FaAward, FaCertificate, FaExternalLinkAlt, FaFilePdf } from 'react-icons/fa'
 
 // Import certificate PDFs from assets
-import ibmDevOpsCert from '../assets/c1.jpg'
-import dsaCert from '../assets/c2.pdf'
 import "./Achi.css"
 
 const Achievements = () => {
@@ -36,7 +34,7 @@ const Achievements = () => {
       detail: "Covered CI/CD pipelines, containerization, and cloud deployment strategies",
       icon: <FaCertificate className="text-purple-400 text-2xl" />,
       hasCertificate: true,
-      certificate: ibmDevOpsCert,
+      certificate: 'https://drive.google.com/file/d/1Ig0Kz3XGOPN0H3zu7DFpHclsQL8-EBll/view?usp=sharing',
       certificateName: "IBM-DevOps-Certificate.pdf"
     },
     {
@@ -45,7 +43,7 @@ const Achievements = () => {
       detail: "Mastered advanced algorithms and problem-solving techniques",
       icon: <FaCertificate className="text-red-400 text-2xl" />,
       hasCertificate: true,
-      certificate: dsaCert,
+      certificate: 'https://drive.google.com/file/d/1V2zUkd_r2b8rFP9uWhuoA_l2Hcs9ia1n/view?usp=sharing',
       certificateName: "DSA-Certificate.pdf"
     },
     {
@@ -54,7 +52,7 @@ const Achievements = () => {
       detail: "Covered frontend, backend, and database technologies in depth",
       icon: <FaCertificate className="text-indigo-400 text-2xl" />,
       hasCertificate: true,
-      certificate: '#',
+      certificate: 'https://drive.google.com/file/d/1cr7aKZ8iPT5weaJvTsq67MVkZJkIDSFz/view?usp=sharing',
       certificateName: "FullStack-Certificate.pdf"
     }
   ]
@@ -91,11 +89,10 @@ const Achievements = () => {
                     href={achievement.certificate}
                     target="_blank"
                     rel="noopener noreferrer"
-                    download={achievement.certificateName}
                     className="inline-flex items-center text-sm text-primary hover:text-primary-light transition-colors"
                   >
                     <FaFilePdf className="mr-2" />
-                    View Certificate (PDF)
+                    View Certificate
                   </a>
                 )}
               </div>
