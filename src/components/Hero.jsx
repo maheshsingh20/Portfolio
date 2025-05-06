@@ -7,8 +7,9 @@ import {
   FiDownload,
 } from "react-icons/fi";
 import "./Hero.css"
-import profileImage from "../assets/profile.png"; // Update this path to your image
-import cv from "../assets/cv.pdf"
+import profileImage from "../assets/profile.png";
+// Replaced local PDF import with direct Google Drive link
+const cv = "https://drive.google.com/file/d/1Y77ErT2sqh3gJvpbRk5PuQcGzrtpmxyI/view?usp=sharing";
 
 const Hero = () => {
   return (
@@ -49,8 +50,9 @@ const Hero = () => {
                   View Projects
                 </a>
                 <a
-                  href={cv} // Replace with actual resume link
-                  download
+                  href={cv}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn bg-transparent border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white flex items-center"
                 >
                   <FiDownload className="mr-2" />
